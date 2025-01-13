@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Budget Website</h1>
+
+   <div class="container">
+
+    <div id="budget_form">
+        Please Enter Your Budget
+        <input type="text" id="budget" inputmode="numeric" required>
+        <button class="btn" type="button"  onclick="myfun()">Calculate</button>
+    </div>
+
+    <div id="expense_form">
+        Enter Your Expense
+        <input type="text" id="expense" required> 
+
+        Enter Your Expense Amount
+        <input type="text" id="amount" inputmode="numeric" required>
+        <button class="btn" type="button" onclick="expen(); addexpenseToTable();" >Add Expense</button>
+    </div>
+
+    <div id="budget_summary">
+
+        <div class="summary_item">
+            <h3>BUDGET</h3>
+            <span class="icon">&#128181;</span>
+            <p id="demo"></p>
+        </div>
+        
+        <div class="summary_item">
+            <h3>EXPENSE</h3>
+            <span class="icon">&#128179;</span>
+            <p id="demo1"></p>
+        </div>
+
+        <div class="summary_item">
+            <h3>BALANCE</h3>
+            <span class="icon">&#128200;</span>
+            <p id="demo2"></p>
+        </div>    
+
+    </div>
+
+    <div id="table_container">
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Expense</th>
+                    <th>Amount</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="table_body">
+                
+            </tbody>
+            
+        </table>
+    </div>
+
+    </div>
+
+    <script src="action.js"></script>
+
+
+
+</body>
+</html>

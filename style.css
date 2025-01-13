@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color:whitesmoke;
+
+}
+
+.container{
+    position:relative;
+}
+
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 10px;
+
+}
+
+div#budget_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 260px;
+    border: 2px solid lawngreen;
+    border-radius:10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    background-color: honeydew;
+    margin: 20px;
+}
+
+#budget{
+    margin: 15px;
+    padding: 10px;
+    border: 2px solid gainsboro;
+    border-radius:5px;
+}
+
+
+div#expense_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 260px;
+    border: 2px solid red;
+    border-radius:10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+    background-color: lightgray;
+    margin: 20px;
+}
+
+#expense{
+    margin: 15px;
+    padding: 10px;
+    border: 2px solid gainsboro;
+    border-radius:5px;
+}
+
+#amount{
+    margin: 15px;
+    padding: 10px;
+    border: 2px solid gainsboro;
+    border-radius:5px;
+}
+
+.btn{
+    width: 100px;
+    height: 38px;
+    border: 2px solid gray;
+    border-radius:5px;
+
+}
+
+.btn:hover{
+    background-color: peru;
+    cursor: pointer;
+}
+
+
+div#budget_summary{
+    position: absolute;
+    top:12%;
+    left:40%;
+    display: flex;
+    justify-content: center;
+    gap:80px;
+}
+
+
+.summary_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.icon{
+    font-size:80px;
+}
+
+
+div#table_container{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#table,th,td{
+    width: 300px;
+    border: 2px solid black;
+    border-style: groove;
+    border-radius:2px;
+    margin: 20px;
+    text-align: center;
+}
